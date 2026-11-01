@@ -48,3 +48,58 @@
 .new-businesses{padding:75px 0}.new-section-intro{display:block;margin-bottom:30px}.new-section-intro>p{margin-top:22px}.new-business{grid-template-columns:30px 95px 1fr 32px;gap:12px;padding:17px 3px;min-height:145px}.new-business:hover{padding:17px 3px}.new-business-logo{height:88px}.new-business-copy h3{font-size:17px;margin:6px 0}.new-business-copy p{font-size:10px;line-height:1.5}.new-business-copy>span{font-size:7px}.new-business-arrow{width:30px;height:30px;font-size:15px}.new-business-number{font-size:10px}
 .new-about-inner{padding:70px 0;display:block}.about-mark{font-size:125px;margin-bottom:45px}.new-about h2,.new-contact h2{font-size:44px}.new-contact{padding:70px 0;display:block}.new-contact>div+div{margin-top:24px}.footer{padding:25px 0;align-items:flex-start;flex-direction:column}.footer-brand{width:100px;height:52px}
 .subhero{display:flex;flex-direction:column;align-items:stretch;padding:65px 0 55px;gap:32px}.subhero h1{font-size:58px}.sub-visual{height:265px}.details-inner{display:block;padding:58px 0}.details-inner>div+div{margin-top:26px}.other-grid{grid-template-columns:1fr}}
+
+/* Clean corporate layout — restrained colour, correct logo presentation */
+:root{--paper:#fff;--ink:#142238;--blue:#2459a8;--muted:#667486;--line:#e5e9ee;--green:#769a45;--orange:#d98242}
+body{background:#fff;color:var(--ink)}
+.wrap{width:min(1180px,calc(100% - 64px))}
+.header{width:min(1180px,calc(100% - 64px));height:104px;border-bottom:1px solid var(--line)}
+.brand-logo{width:58px;height:88px;background:transparent!important;padding:0;border-radius:0;overflow:visible}
+.brand-logo img{width:100%;height:100%;object-fit:contain}
+.nav{gap:34px}.nav a{font-size:12px;color:#4f5d6d;font-weight:600}.header-cta{background:var(--ink);padding:14px 19px;border-radius:3px;font-size:11px}.header-cta b{color:#b5d17e}
+.corporate-hero{min-height:510px;padding:64px 0 72px;display:grid;grid-template-columns:360px 1fr;gap:100px;align-items:center}
+.corporate-logo{min-height:360px;display:flex;align-items:center;justify-content:center}
+.corporate-logo img{display:block;width:auto;height:350px;max-width:100%;object-fit:contain}
+.kicker{display:block;font-size:10px;letter-spacing:.14em;font-weight:800;color:#738093}
+.corporate-intro h1{font:800 clamp(52px,6vw,76px)/1.03 Manrope,sans-serif;letter-spacing:-.075em;margin:22px 0 20px;color:#142238}
+.corporate-intro h1 span{color:var(--blue)}
+.corporate-intro p{font-size:15px;line-height:1.85;color:#657386;max-width:550px;margin:0 0 28px}
+.primary-link{display:inline-flex;align-items:center;gap:26px;background:var(--blue);color:#fff;padding:16px 20px;border-radius:3px;font-size:11px;font-weight:700;transition:background .2s,transform .2s}
+.primary-link:hover{background:#193f7b;transform:translateY(-2px)}.primary-link b{font-size:16px}
+.business-section{background:#f5f7fa;padding:82px 0 96px;border-block:1px solid #edf0f3}
+.business-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px}
+.business-heading h2,.about-layout h2,.contact-section h2{font:800 clamp(38px,4.5vw,56px)/1.05 Manrope,sans-serif;letter-spacing:-.07em;margin:15px 0 0;color:#142238}
+.business-heading h2 span,.about-layout h2 span{color:var(--blue)}
+.business-heading>p{font-size:13px;line-height:1.8;color:#6d7a8b;max-width:360px;margin:0 0 5px}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.service-card{background:#fff;border:1px solid #e4e9ef;border-radius:5px;padding:19px 19px 0;display:flex;flex-direction:column;min-width:0;transition:transform .2s,box-shadow .2s,border-color .2s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 14px 35px #172b4412;border-color:#cbd5e1}
+.service-card-top{display:flex;justify-content:space-between;align-items:center;color:#8995a3;font-size:9px;font-weight:800;letter-spacing:.13em}
+.service-card-top span:first-child{font-size:12px;color:var(--ink)}
+.service-logo{height:190px;margin:15px -4px 8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff}
+.service-logo img{display:block;width:100%;height:100%;object-fit:contain;transform:scale(1.38)}
+.service-logo-detail img{transform:scale(1.5)}
+.service-logo-junk img{transform:scale(1.42)}
+.service-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid #edf0f3;padding:18px 0 20px;margin-top:auto}
+.service-card-bottom h3{font:800 19px Manrope,sans-serif;letter-spacing:-.045em;margin:0 0 7px;color:#17263b}
+.service-card-bottom p{font-size:11px;line-height:1.6;color:#718093;margin:0}
+.service-arrow{width:36px;height:36px;flex:0 0 36px;display:grid;place-items:center;border:1px solid #dce3eb;border-radius:50%;color:var(--blue);font-size:17px}
+.service-detail .service-arrow{color:#2459a8}.service-lawn .service-arrow{color:#668b3a}.service-junk .service-arrow{color:#d98242}
+.about-section{padding:90px 0;background:#fff}
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.about-layout h2{font-size:clamp(40px,4.5vw,58px);margin-top:20px}
+.about-layout>div+div{padding-top:24px}.about-layout p{font-size:13px;line-height:1.9;color:#667486;margin:0 0 16px;max-width:570px}
+.contact-section{padding:76px 0 88px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;border-top:1px solid var(--line)}
+.contact-section h2{font-size:clamp(40px,4.5vw,58px);margin-top:18px}.contact-section>div+div p{font-size:13px;line-height:1.9;color:#667486;max-width:450px;margin:0 0 22px}
+.footer{width:min(1180px,calc(100% - 64px));min-height:125px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:25px}
+.footer-brand{width:46px;height:70px}.footer p{font-size:11px;color:#758194;margin:0}.footer small{font-size:9px;color:#7f8a98;letter-spacing:.1em}
+:focus-visible{outline:3px solid #2459a8;outline-offset:4px}
+@media(max-width:850px){.corporate-hero{grid-template-columns:260px 1fr;gap:55px}.corporate-logo img{height:300px}.service-logo{height:155px}.service-card{padding:16px 15px 0}.service-card-bottom h3{font-size:16px}.service-card-bottom p{font-size:10px}}
+@media(max-width:640px){
+.wrap,.header,.footer{width:calc(100% - 40px)}.header{height:88px}.brand-logo{width:48px;height:74px}.nav,.header-cta{display:none}.menu{display:block;background:none;border:0;color:var(--ink);font-size:23px}
+.nav.open{display:flex;position:absolute;top:87px;left:-20px;right:-20px;padding:22px 20px;background:white;flex-direction:column;gap:20px;box-shadow:0 12px 24px #17223812;border-bottom:1px solid var(--line)}
+.corporate-hero{min-height:0;padding:46px 0 58px;grid-template-columns:1fr;gap:25px;text-align:center}.corporate-logo{min-height:0;height:235px}.corporate-logo img{height:225px}.corporate-intro h1{font-size:49px;margin:14px 0}.corporate-intro p{font-size:13px;margin:0 auto 22px}.corporate-intro .kicker{font-size:8px}.primary-link{padding:15px 17px}
+.business-section{padding:62px 0 70px}.business-heading{display:block;margin-bottom:25px}.business-heading h2{font-size:42px}.business-heading>p{margin-top:16px}.service-grid{grid-template-columns:1fr;gap:14px}.service-card{padding:16px 16px 0;display:grid;grid-template-columns:125px 1fr;grid-template-rows:22px 1fr;column-gap:17px;min-height:155px}.service-card-top{grid-column:1/-1}.service-logo{grid-column:1;grid-row:2;height:105px;margin:0 0 12px}.service-logo img{transform:scale(1.35)}.service-logo-detail img{transform:scale(1.45)}.service-card-bottom{grid-column:2;grid-row:2;border-top:0;padding:8px 0 14px;align-self:center}.service-card-bottom h3{font-size:17px}.service-card-bottom p{font-size:10px}.service-arrow{width:30px;height:30px;flex-basis:30px}
+.about-section{padding:65px 0}.about-layout{grid-template-columns:1fr;gap:18px}.about-layout h2{font-size:43px;margin-top:14px}.about-layout>div+div{padding-top:0}.contact-section{padding:62px 0 70px;grid-template-columns:1fr;gap:18px}.contact-section h2{font-size:43px}.footer{padding:24px 0;align-items:flex-start;flex-direction:column}.footer-brand{width:42px;height:64px}
+.subhero{display:flex;flex-direction:column;align-items:stretch;padding:50px 0;gap:24px}.subhero h1{font-size:52px}.sub-visual{height:260px}.sub-brand-logo{width:100%;height:100%;object-fit:contain;transform:scale(1.22)}.details-inner{display:block;padding:48px 0}.details-inner>div+div{margin-top:20px}.other-grid{grid-template-columns:1fr}
+}
