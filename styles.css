@@ -103,3 +103,9 @@ body{background:#fff;color:var(--ink)}
 .about-section{padding:65px 0}.about-layout{grid-template-columns:1fr;gap:18px}.about-layout h2{font-size:43px;margin-top:14px}.about-layout>div+div{padding-top:0}.contact-section{padding:62px 0 70px;grid-template-columns:1fr;gap:18px}.contact-section h2{font-size:43px}.footer{padding:24px 0;align-items:flex-start;flex-direction:column}.footer-brand{width:42px;height:64px}
 .subhero{display:flex;flex-direction:column;align-items:stretch;padding:50px 0;gap:24px}.subhero h1{font-size:52px}.sub-visual{height:260px}.sub-brand-logo{width:100%;height:100%;object-fit:contain;transform:scale(1.22)}.details-inner{display:block;padding:48px 0}.details-inner>div+div{margin-top:20px}.other-grid{grid-template-columns:1fr}
 }
+
+
+/* Service-page artwork: retain the full logo, enlarge within a clean white frame */
+.sub-visual{background:#fff;border:1px solid #e7ebef;border-radius:4px;overflow:hidden}
+.sub-brand-logo{width:100%;height:100%;object-fit:contain;transform:scale(1.2)}
+.sub-visual small{z-index:2;background:#fff;padding:5px 8px;left:14px;bottom:12px}
